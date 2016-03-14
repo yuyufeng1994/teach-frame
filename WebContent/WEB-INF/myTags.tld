@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.0" xmlns="http://java.sun.com/xml/ns/j2ee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee web-jsptaglibrary_2_0.xsd">
+ <tlib-version>1.0</tlib-version>
+ <short-name>etc</short-name>
+ <uri>/etc</uri>
+ <tag>
+  <name>page</name>
+  <tag-class>com.icss.tags.PageTag</tag-class>
+  <body-content>empty</body-content>
+  <description>分页标签</description>
+  <attribute>
+   <description>分页结果</description>
+   <name>page</name>
+   <required>true</required>
+   <rtexprvalue>true</rtexprvalue>
+  </attribute>
+  <attribute>
+   <description>链接模板，{page}代替页码</description>
+   <name>url</name>
+   <required>true</required>
+   <rtexprvalue>true</rtexprvalue>
+  </attribute>
+  <attribute>
+   <description>显示的上下页列表，默认10</description>
+   <name>num</name>
+   <rtexprvalue>true</rtexprvalue>
+  </attribute>
+  <attribute>
+   <description>分页显示模板，默认index</description>
+   <name>template</name>
+   <rtexprvalue>true</rtexprvalue>
+  </attribute>
+  <attribute>
+   <description>分页列表保存的属性名</description>
+   <name>var</name>
+   <rtexprvalue>true</rtexprvalue>
+  </attribute>
+ </tag>
+ <tag>
+  <name>list</name>
+  <tag-class>com.icss.tags.ListTag</tag-class>
+  <body-content>JSP</body-content>
+  <attribute>
+   <description>需要循环的列表</description>
+   <name>list</name>
+   <required>true</required>
+   <rtexprvalue>true</rtexprvalue>
+  </attribute>
+  <attribute>
+   <description>索引属性名称 默认index</description>
+   <name>varIndex</name>
+   <required>false</required>
+   <rtexprvalue>true</rtexprvalue>
+  </attribute>
+  <attribute>
+   <description>列表元素名称,默认vo</description>
+   <name>var</name>
+   <rtexprvalue>true</rtexprvalue>
+  </attribute>
+ </tag>
+</taglib>

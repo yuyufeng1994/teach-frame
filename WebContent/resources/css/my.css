@@ -1,0 +1,5 @@
+.errorMessage,.errorMessage li,.actionMessage,.actionMessage li {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
